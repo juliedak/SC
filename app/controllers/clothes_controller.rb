@@ -8,10 +8,10 @@ class ClothesController < ApplicationController
     @clothe = Clothe.find(params[:id])
   end
 
-  def new
-    @clothe = Clothe.new
-    @clothe.save
-  end
+  # def new
+  #   @clothe = Clothe.new
+  #   @clothe.save
+  # end
 
   def create
     @clothe = Clothe.new(clothe_params)
@@ -39,6 +39,6 @@ class ClothesController < ApplicationController
   private
 
   def clothe_params
-    params.require(:clothe).permit(:price, :title, :descripton, :location, :gender, :occasion, :latitude, :longitude, :user_id)
+    params.require(:clothe).permit(:title, :descripton, :location, :gender, :occasion, :latitude, :longitude, :user_id)
   end
 end

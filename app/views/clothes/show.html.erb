@@ -1,0 +1,10 @@
+<h2><%= @clothe.title  %></h2>
+<p><%= @clothe.location %></p>
+<p><%= @clothe.gender %></p>
+<p><%= @clothe.description %></p>
+
+<%= link_to clothe_path(@clothe),
+  method: :delete,
+  data: { confirm: "Sur de vouloir supprimer?" } %>
+
+  <%= link_to "Retourner a la liste", clothes_path %>

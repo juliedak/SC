@@ -1,3 +1,5 @@
 <% @clothes.each do |clothe| %>
   <%= link_to clothe.title, clothe_path(clothe) %>
   <% end %>
+
+<%= link_to "Ajouter un vetement", new_clothe_path%>

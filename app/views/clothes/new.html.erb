@@ -1,0 +1,9 @@
+<%= simple_form_for(@clothe) do |f| %>
+  <%= f.input :title%>
+  <%= f.input :gender%>
+  <%= f.input :description%>
+  <%= f.input :location%>
+  <%= f.submit "Rajouter", class: "btn btn-primary" %>
+<% end %>
+
+<%= link_to "Retourner a la liste", clothes_path, class: "btn btn-primary" %>

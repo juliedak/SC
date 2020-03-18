@@ -8,11 +8,5 @@
   <%#= f.input :end_date, placeholder: "📅 Until - enter your date", as: :string, required: false, label: false, input_html: {class: "datepicker"} %>
   <%#= f.button :submit, "Book me", class: "btn btn-danger", id: "booking-btn" %>
 <#% end %> -->
-
-
-<%= link_to clothe_path(@clothe),
-  method: :delete,
-  data: { confirm: "Sur de vouloir supprimer?" } %>
-
   <%= link_to "Retourner a la liste", clothes_path %>
 

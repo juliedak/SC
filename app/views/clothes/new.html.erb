@@ -3,6 +3,7 @@
   <%= f.input :gender%>
   <%= f.input :description%>
   <%= f.input :location%>
+  <%= f.input :photos, as: :file, input_html: { multiple: true} %>
   <%= f.button :submit "Rajouter", class: "btn btn-primary" %>
 <% end %>
 
